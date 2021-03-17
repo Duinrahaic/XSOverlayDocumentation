@@ -1,5 +1,5 @@
 # Keyboard Soundpacks
-!> _Keyboard Soundpacks are located at `[XSOINSTALLDIRECTORY]/XSOverlay_Data/StreamingAssets/Plugins/KeyboardSounds/`_
+!> _Keyboard Soundpacks are located at `[XSOverlayInstallationDirectory]/XSOverlay_Data/StreamingAssets/Plugins/KeyboardSounds/`_
 
 ***
 

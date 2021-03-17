@@ -121,7 +121,7 @@ _Changes the accent color throughout the UI. (Button hovering, notification time
 ***
 
 # Language
-!>_Allows you to select the language from the list of included language files. Language files can be added in `[XSOINSTALLDIRECTORY]/XSOverlay_Data/StreamingAssets/localization/`_
+!>_Allows you to select the language from the list of included language files. Language files can be added in `[XSOverlayInstallationDirectory]/XSOverlay_Data/StreamingAssets/localization/`_
 
 ***
 
