@@ -106,6 +106,20 @@ _Changes the accent color throughout the UI. (Button hovering, notification time
 
 ***
 
+# Notifications
+!> _Notifications will **never** be visible unless an external application sends them to you, or unless you get an achievment. Please refer to the [Notifications API](NotificationsAPI) to understand more about Notifications!_
+
+>### Scale
+>Changes the overall scale of the notification popup.
+
+>### Offsets
+>Changes the offset of the notifcation popup from your head.
+
+>### Test Notification
+>Creates a test notification that lasts for 10 seconds on screen to allow for easy adjustments of the above options.
+
+***
+
 # Language
 !>_Allows you to select the language from the list of included language files. Language files can be added in `[XSOINSTALLDIRECTORY]/XSOverlay_Data/StreamingAssets/localization/`_
 
