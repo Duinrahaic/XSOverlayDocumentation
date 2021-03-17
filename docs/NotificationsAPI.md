@@ -11,6 +11,7 @@ public int messageType = 0; // 1 = Notification Popup, 2 = MediaPlayer Informati
 public int index = 0; //Only used for Media Player, changes the icon on the wrist.
 public float timeout = 0.5f; //How long the notification will stay on screen for in seconds
 public float height = 175; //Height notification will expand to if it has content other than a title. Default is 175
+public float opacity = 1; //Opacity of the notification, to make it less intrusive. Setting to 0 will set to 1.
 public float volume = 0.7f; // Notification sound volume.
 public string audioPath = ""; //File path to .ogg audio file. Can be "default", "error", or "warning". Notification will be silent if left empty.
 public string title = ""; //Notification title, supports Rich Text Formatting
@@ -37,6 +38,7 @@ class Program
         public string content { get; set; }
         public string icon { get; set; }
         public float height { get; set; }
+        public float opacity { get; set; }
         public bool useBase64Icon { get; set; }
         public string sourceApp { get; set; }
     }
@@ -60,6 +62,7 @@ class Program
         msg.audioPath = "default";
         msg.useBase64Icon = false;
         msg.icon = "default";
+        msg.opacity = 1f;
 
         byte[] byteBuffer = JsonSerializer.SerializeToUtf8Bytes(msg);
         broadcastSocket.SendTo(byteBuffer, endPoint);
