@@ -99,8 +99,6 @@ _Changes the date format_
 >### Dark Theme
 _Enables or disables dark theme._
 
-***
-
 >### Accent Color
 _Changes the accent color throughout the UI. (Button hovering, notification timer, slider colors, etc)_
 
