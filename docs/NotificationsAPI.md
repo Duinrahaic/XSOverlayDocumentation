@@ -1,6 +1,6 @@
 # Notifications API
 
-!>_XSOverlay's default UDP port is `42069`. This can be changed by navigating to `[XSOverlayInstallDirectory]/XSOverlay_Data/StreamingAssets/Etc/` and changing the port in the `NotificationAPIConfig.json` file._
+!>_XSOverlay's default UDP port is `42069`. This can be changed by navigating to `[XSOverlayInstallDirectory]/XSOverlay_Data/StreamingAssets/Plugins/Config/` and changing the `port` entry in the `NotificationAPIConfig.json` file._
 
 !>_XSOverlay **ONLY** listens for messages from localhost. You **CANNOT** currently send messages over the network to a different machine._
 
