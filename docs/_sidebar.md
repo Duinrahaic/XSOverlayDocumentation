@@ -3,6 +3,7 @@
     * [Getting Started](GettingStarted)
     * [Overlay Modifiers](OverlayModifiers)
     * [Overlay Settings](Settings)
+    * [Layouts](LayoutSystem)
 
 - **Developer Tools**
     * [Keyboard Soundpacks](KeyboardSoundPacks)
