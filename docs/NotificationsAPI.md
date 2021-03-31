@@ -23,7 +23,35 @@ public string sourceApp = ""; //Somewhere to put your app name for debugging pur
 ```
 
 ***
-# Simple Integration Example in C#
+# C# Nuget Package Integration
+!>_XSOverlay has an officially maintained NuGet package / Github repository for integrating the Notifications API easily into your C# applications._
+
+> #### Github
+> https://github.com/nnaaa-vr/XSNotifications
+
+> #### NuGet
+> https://www.nuget.org/packages/XSNotifications/
+
+```cs
+//...
+using XSNotifications;
+using XSNotifications.Enum;
+
+namespace NotificationExample1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            new XSNotifier().SendNotification(new XSNotification(){Title="Notification"});
+        }
+    }
+}
+```
+
+
+***
+# C# Manual Integration
 ```cs
 class Program
 {
