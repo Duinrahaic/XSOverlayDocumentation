@@ -11,11 +11,11 @@
 <br>Themes MUST use a UI shader on the material. Failing to due so may end in strange results. XSOverlay's SDK has a default UI Shader included under `XSOverlaySDK/Resources/Shaders/Default UI Template`.
 
 > **Previewing and Building a Theme**
-<br><br>- Create your material using a copy of the Default UI Template, located at `XSOverlaySDK/Resources/Shaders/Default UI Template` in your project.
+<br><br>- Create your material using a copy of the Default UI Template, located at `Assets/XSOverlaySDK/Resources/Shaders/Default UI Template` in your project.
 <br><br> - Drag your material into the Theme Material slot on the Theme Creator component in the inspector.
 <br><br> - Hit the preview button to preview your theme on the currently selected UI. (If changing Shader Parameters to get alignement correct, you may need to hit Ctrl+S to force Unity to update the material properties. This is a Unity limitation.)
 <br><br> - Hit build to build your theme. You may need to hit it twice.
-<br><br> - Your theme has been exported to `[ExportedThemes]/[SelectedUI]/[ThemeName]`
+<br><br> - Your theme has been exported to `Assets/ExportedThemes/[SelectedUI]/[ThemeName]`
 
 ### Exposed Internal Shader Parameters
 |Parameter                |Type     |Description                                                            |
