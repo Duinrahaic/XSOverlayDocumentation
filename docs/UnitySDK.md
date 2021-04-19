@@ -22,7 +22,7 @@
 |-------------------------|---------|----------|-------------------------------------------------------------------------|
 |`_ClockColor`            |`Color`  |`write`   |If themeing the wrist, sets the clock font color to this color           |
 |`_XSOAccentColor`        |`Color`  |`read`    |Contains the Accent Color set in XSOverlay's user settings               |
-|`_CurrentSystemTime`     |`Vector4`|`read`    |`x`: Hour<br>  `y`: Minute<br>  `z`: Second<br>  `w`: Millisecond        |
+|`_CurrentSystemTime`     |`Vector4`|`read`    |24 Hour Format<br> `x`: Hour<br>  `y`: Minute<br>  `z`: Second<br>  `w`: Millisecond        |
 |`_CurrentSystemDate`     |`Vector4`|`read`    |`x`: Day<br>   `y`: Month<br>  `z`: Year<br>   `w`: UTC Offset in Minutes|
 |`_CursorPositionVelocity`|`Vector4`|`read`    |`xy`: Cursor Position (Normalized)<br> `zw`: Cursor Velocity             |
 |`_HMDPosition`           |`Vector3`|`read`    |Contains the World Space Position of the HMD                             |
