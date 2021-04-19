@@ -18,14 +18,14 @@
 <br><br> - Your theme has been exported to `Assets/ExportedThemes/[SelectedUI]/[ThemeName]`
 
 ### Exposed Internal Shader Parameters
-|Parameter                |Type     |Description                                                            |
-|-------------------------|---------|-----------------------------------------------------------------------|
-|`_ClockColor`            |`Color`  |If themeing the wrist, sets the clock font color to this color         |
-|`_XSOAccentColor`        |`Color`  |Contains the Accent Color set in XSOverlay's user settings             |
-|`_CursorPositionVelocity`|`Vector4`|Contains the Position`xy` and Velocity`zw`of the cursor on the canvas  |
-|`_HMDPosition`           |`Vector3`|Contains the World Space Position of the HMD                           |
-|`_HMDRotation`           |`Vector3`|Contains the World Space Rotation`eulerAngles` of the HMD              |
-|`_OverlayPosition`       |`Vector3`|Contains the World Space Position of the Overlay                       |
-|`_OverlayRotation`       |`Vector3`|Contains the World Space Rotation`eulerAngles` of the Overlay          |
-|`_OverlayVelocity`       |`Vector3`|Contains the World Space velocity of the Overlay                       |
-|`_OverlayAngleToHMD`     |`Float`  |Contains the angle from the Overlay to the HMD in degrees              |
+|Parameter                |Type     |Access    |Description                                                            |
+|-------------------------|---------|----------|-----------------------------------------------------------------------|
+|`_ClockColor`            |`Color`  |`write`   |If themeing the wrist, sets the clock font color to this color         |
+|`_XSOAccentColor`        |`Color`  |`read`    |Contains the Accent Color set in XSOverlay's user settings             |
+|`_CursorPositionVelocity`|`Vector4`|`read`    |Contains the Position`xy` and Velocity`zw`of the cursor on the canvas  |
+|`_HMDPosition`           |`Vector3`|`read`    |Contains the World Space Position of the HMD                           |
+|`_HMDRotation`           |`Vector3`|`read`    |Contains the World Space Rotation`eulerAngles` of the HMD              |
+|`_OverlayPosition`       |`Vector3`|`read`    |Contains the World Space Position of the Overlay                       |
+|`_OverlayRotation`       |`Vector3`|`read`    |Contains the World Space Rotation`eulerAngles` of the Overlay          |
+|`_OverlayVelocity`       |`Vector3`|`read`    |Contains the World Space velocity of the Overlay                       |
+|`_OverlayAngleToHMD`     |`Float`  |`read`    |Contains the angle from the Overlay to the HMD in degrees              |
