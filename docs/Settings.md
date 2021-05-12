@@ -3,6 +3,9 @@
 ***
 
 # Windows
+>### Window Capture API
+_Allows you to select between two capture methods for Window Captures, BitBlt, and Windows Graphics Capture. <br><br>Windows Graphics Capture is faster, and less resource intensive, but will put a yellow border around any winodw that is captured by it. This will not be visible in the capture, but will be visible if the captured window is also being displayed on a Desktop Capture. <br><br>BitBlt will not put a yellow border around the captured window, but is significantly slower and more resource intensive to use. <br><br>Desktop captures will always use Windows Graphics Capture if available, and will fall back to BitBlt when not. (Windows 10 builds prior to 1903)_
+
 >### Curved Overlays
 _Allows overlays to be curved. Due to SteamVR / OpenVR implementation limitations, overlays will only be curved when within a threshold in front of you, similar to Oculus Dash. Curvature will not work on overlays that are attached to devices. Curvature will not work if "Aim Movement" is turned off._
 
