@@ -1,16 +1,19 @@
-- [**Home**](/)
+- [**Home**](Home)
 - **User Experience**
     * [Getting Started](GettingStarted)
     * [Overlay Modifiers](OverlayModifiers)
     * [Overlay Settings](Settings)
+    * [Overlay Snapping](WindowSnapping)
     * [Layouts](LayoutSystem)
     * [Themes](Themes)
+    
 
 - **Developer Tools**
     * [Keyboard Soundpacks](KeyboardSoundPacks)
     * [Notifications API](NotificationsAPI)
     * [Web Applications](WebApplications)
     * [Unity SDK](UnitySDK)
+    * [Debugging](Debugging)
 
 
 
