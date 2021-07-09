@@ -10,6 +10,7 @@
 
 - **Developer Tools**
     * [Keyboard Soundpacks](KeyboardSoundPacks)
+    * [Keyboard Layout](KeyboardLayout)
     * [Notifications API](NotificationsAPI)
     * [Web Applications](WebApplications)
     * [Unity SDK](UnitySDK)
