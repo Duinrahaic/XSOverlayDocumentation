@@ -13,8 +13,9 @@
     // The Scan Code of the primary key, or Virtual Key Code if useVirtualKeyCode is true.
     string keycode; 
     
-    // Used for macro keys, such as Copy / Paste -- this is for if you want multiple buttons on one button. This will be changing to an array in the future, and currently does not function.
-    string keycode2;
+    // Can contain a list of Scan Codes / Virtual Key Codes that will be sent in the order of the list. "keycodes" : ["k1", "k2", etc]
+    // Do not use "keycode" and "keycodes" together in the same object, as it is unsupported behavior and may cause issues.
+    List<string> keycodes; 
 
     // Can be "light", "mid", "dark", or "contrast" - Picks the respective color from the global theme.
     string color = "light";
@@ -61,7 +62,7 @@
     // Determines if the key is a toggle key, will remain pressed until pressed again manually.
     bool toggle = false;
 
-    // Specifies that KeyCode is already a VirtualKeyCode, and does not need to be mapped.
+    // Specifies that "keycode" or "keycodes" already contains a mapped VirtualKeyCode, and does not need to be mapped from a Scan Code.
     bool useVirtualKeyCode = false;
 }
 ```
