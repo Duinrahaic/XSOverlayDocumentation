@@ -1,37 +1,55 @@
 # Notifications API
 
-!>_XSOverlay's default UDP port is `42069`. This can be changed by navigating to `[XSOverlayInstallDirectory]/XSOverlay_Data/StreamingAssets/Plugins/Config/` and changing the `port` entry in the `NotificationAPIConfig.json` file._
+XSOverlay has a websocket based API for sending notifications to the overlay. 
 
-!>_XSOverlay **ONLY** listens for messages from localhost. You **CANNOT** currently send messages over the network to a different machine._
+!> **Notice:** XSOverlay is migrating the Notification API to a websocket protocol. This API remain for legacy application, but futher development and support will be migrated to [Websocket API](WebsocketAPI)
+
+
+***
+# Configuration
+
+XSOverlay, by default, is configured to listen for Notifications messages on port `42069`. This can be changed by editing the `ExternalMessageAPIConfig.json` file located in the `[XSOverlayInstallDirectory]/XSOverlay_Data/StreamingAssets/Plugins/Config/` directory.
+
+The following options can be configured:
+
+| Option | Description | Default Value |
+| --- | --- | --- |
+| `UdpPort` | The UDP port XSOverlay listens to messages on. | `42069` |
+
+
+!>_XSOverlay **ONLY** listens for messages from the local host. You **CANNOT** currently send messages over the network to a different machine_
 
 ***
 # XSOverlay Message Object
-```cs
-public int messageType = 0; // 1 = Notification Popup, 2 = MediaPlayer Information, will be extended later on.
-public int index = 0; //Only used for Media Player, changes the icon on the wrist.
-public float timeout = 0.5f; //How long the notification will stay on screen for in seconds
-public float height = 175; //Height notification will expand to if it has content other than a title. Default is 175
-public float opacity = 1; //Opacity of the notification, to make it less intrusive. Setting to 0 will set to 1.
-public float volume = 0.7f; // Notification sound volume.
-public string audioPath = ""; //File path to .ogg audio file. Can be "default", "error", or "warning". Notification will be silent if left empty.
-public string title = ""; //Notification title, supports Rich Text Formatting
-public string content = ""; //Notification content, supports Rich Text Formatting, if left empty, notification will be small.
-public bool useBase64Icon = false; //Set to true if using Base64 for the icon image
-public string icon = ""; //Base64 Encoded image, or file path to image. Can also be "default", "error", or "warning"
-public string sourceApp = ""; //Somewhere to put your app name for debugging purposes
 
-```
+The following is the message object that is to be sent to XSOverlay Notification API.
+
+![Notification Markup](/img/notification/NotificationMarkup.png "Notification Markup")
+
+
+| Prorperty | Type | Description | Default Value |
+| --- | --- | --- | --- |
+| `messageType` | `int` | The type of message to send. `1` defines that this is for the Notification API | `1` |
+| `index` | `int` | Used for Media Player, changes the icon on the wrist. (depricated, see note below) | `0` |
+| `timeout` | `float` | How long the notification will stay on screen for in seconds. | `0.5f` |
+| `height` | `float` | Height notification will expand to if it has content other than a title. Default is 175. | `175` |
+| `opacity` | `float` | Opacity of the notification, to make it less intrusive. Setting to 0 will set to 1. | `1` |
+| `volume` | `float` | Notification sound volume. | `0.7f` |
+| `audioPath` | `string` | File path to .ogg audio file. Can be "default", "error", or "warning". Notification will be silent if left empty. | `""` |
+| `title` | `string` | Notification title, supports Rich Text Formatting. | `""` |
+| `content` | `string` | Notification content, supports Rich Text Formatting, if left empty, notification will be small. | `""` |
+| `useBase64Icon` | `bool` | Set to true if using Base64 for the icon image. | `false` |
+| `icon` | `string` | Base64 Encoded image, or file path to image. Can also be "default", "error", or "warning". | `""` |
+| `sourceApp` | `string` | Somewhere to put your app name for debugging purposes. | `""` |
+
+!>_Media related properties have been depricated_
+
 
 ***
-# C# Nuget Package Integration
-!>_XSOverlay has an officially maintained NuGet package / Github repository for integrating the Notifications API easily into your C# applications._
+# C# Nuget Package
+XSOverlay has an officially maintained [NuGet Package](https://www.nuget.org/packages/XSNotifications/) / [Github repository](https://github.com/nnaaa-vr/XSNotifications) for integrating the Notifications API easily into your C# applications.
 
-> #### Github
-> https://github.com/nnaaa-vr/XSNotifications
-
-> #### NuGet
-> https://www.nuget.org/packages/XSNotifications/
-
+## Code Samples
 ```cs
 //...
 using XSNotifications;
@@ -51,7 +69,7 @@ namespace NotificationExample1
 
 
 ***
-# C# Manual Integration
+## C# Manual Integration
 ```cs
 class Program
 {

@@ -1,13 +1,18 @@
 * [**Home**](/)
 - **User Experience**
-    * [- Getting Started](GettingStarted.md)
-        * [- Layout Mode](GettingStarted.md?id=layout-mode)
-        * [- Controls](GettingStarted.md?id=Control-Scheme)
-            * [- Valve Index](GettingStarted.md?id=Valve-Index)
-            * [- Vive / WMR](GettingStarted.md?id=vive-windows-mixed-reality)
-            * [- Oculus](GettingStarted.md?id=oculus-quest-rift-s-rift-cv1)
-        *[- Overlay Modifiers](OverlayModifiers.md)
+    * [Getting Started](GettingStarted)
+    * [Overlay Modifiers](OverlayModifiers)
+    * [Overlay Settings](Settings)
+    * [Overlay Snapping](WindowSnapping)
+    * [Layouts](LayoutSystem)
+    * [Themes](Themes)
+    
 
 - **Developer Tools**
-    * [- Notifications API](NotificationsAPI.md?id=notifications-api)
-    * [- Web Applications](WebApplications.md)
+    * [Keyboard Soundpacks](KeyboardSoundPacks)
+    * [Keyboard Layout](KeyboardLayout)
+    * [Notifications API](NotificationsAPI)
+    * [Websocket API](WebsocketAPI)
+    * [OSC API](OSCAPI)
+    * [Web Applications](WebApplications)
+    * [Debugging](Debugging)

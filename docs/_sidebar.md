@@ -12,8 +12,9 @@
     * [Keyboard Soundpacks](KeyboardSoundPacks)
     * [Keyboard Layout](KeyboardLayout)
     * [Notifications API](NotificationsAPI)
+    * [Websocket API](WebsocketAPI)
+    * [OSC API](OSCAPI)
     * [Web Applications](WebApplications)
-    * [Unity SDK](UnitySDK)
     * [Debugging](Debugging)
 
 
