@@ -1,28 +1,28 @@
-# XSOverlay Websocket API
+# XSOverlay WebSocket API
 
-XSOverlay has a websocket based API for interacting with the XSOverlay media player and notification interfaces. 
+XSOverlay has a WebSocket based API for interacting with the XSOverlay media player and notification interfaces. 
 
 !>_This is API is currently in development and may not be fully implemented yet. Please visit the discord for further updates._
 
 ***
 # Configuration
 
-XSOverlay, by default, is configured to listen for websocket messages on port `42070`. This can be changed by editing the `ExternalMessageAPIConfig.json` file located in the `[XSOverlayInstallDirectory]/XSOverlay_Data/StreamingAssets/Plugins/Config/` directory.
+XSOverlay, by default, is configured to listen for WebSocket messages on port `42070`. This can be changed by editing the `ExternalMessageAPIConfig.json` file located in the `[XSOverlayInstallDirectory]/XSOverlay_Data/StreamingAssets/Plugins/Config/` directory.
 
 The following options can be configured:
 
 | Option | Description | Default Value |
 | --- | --- | --- |
-| `WebSocketPort` | The port XSOverlay listens to websocket messages on. | `42070` |
+| `WebSocketPort` | The port XSOverlay listens to WebSocket messages on. | `42070` |
 
 
 !>_XSOverlay **ONLY** listens for messages from the local host. You **CANNOT** currently send messages over the network to a different machine_
 
 ***
 
-# Websocket Message Format
+# WebSocket Message Format
 
-All websocket messages are sent as JSON objects. The following properties are available:
+All WebSocket messages are sent as JSON objects. The following properties are available:
 
 | Property | Data Type | Description |
 | --- | --- | --- |
@@ -30,11 +30,11 @@ All websocket messages are sent as JSON objects. The following properties are av
 | target | string | The name of the application the message is intended for. Ex 'xsoverlay'|
 | command | string | The command to issue to the target |
 | jsonData | string | JSON Payload with command specific data. See below for endpoint specific for endpoint message formats |
-| rawData | string | Raw data payload with a signular value in string format like "true", "false", etc. This is mainly used by the UI to do things like setting settings, where the string will be parsed|
+| rawData | string | Raw data payload with a singular value in string format like "true", "false", etc. This is mainly used by the UI to do things like setting settings, where the string will be parsed|
 
 
 # Code Snippet 
-A C# example of connecting to the XSOverlay websocket server. This is a C# example, but the same concept can be applied to any language that supports websockets and JSON serialization.
+A C# example of connecting to the XSOverlay WebSocket server. This is a C# example, but the same concept can be applied to any language that supports WebSocket and JSON serialization.
 ```cs
 static async Task Main(string[] args)
 {
@@ -71,7 +71,7 @@ The media API allows you to control the XSOverlay media player.
 
 
 ## Code Snippet 
-An example for the updating the endpoint with a media player update. This is a C# example, but the same concept can be applied to any language that supports websockets and JSON serialization.
+An example for the updating the endpoint with a media player update. This is a C# example, but the same concept can be applied to any language that supports WebSockets and JSON serialization.
 ```cs 
 
 public static void SendXSOMessage()

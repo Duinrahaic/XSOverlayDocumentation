@@ -5,14 +5,14 @@
     * [Overlay Settings](Settings)
     * [Overlay Snapping](WindowSnapping)
     * [Layouts](LayoutSystem)
-    * [Themes](Themes)
+    * [Common Issues](CommonIssues)
     
 
 - **Developer Tools**
-    * [Keyboard Soundpacks](KeyboardSoundPacks)
+    * [Keyboard Sound Packs](KeyboardSoundPacks)
     * [Keyboard Layout](KeyboardLayout)
     * [Notifications API](NotificationsAPI)
-    * [Websocket API](WebsocketAPI)
+    * [WebSocket API](WebsocketAPI)
     * [OSC API](OSCAPI)
     * [Web Applications](WebApplications)
     * [Debugging](Debugging)
